@@ -17,3 +17,9 @@ jobs:
         uses: actions/checkout@v3.0.2
       - name: List Items after Checkout
         run: ls -al
+      - name: List ENV variables
+        run: |
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_SHA
+          echo $GITHUB_WORKSPACE
+          echo ${{ github.token }}
