@@ -19,6 +19,7 @@ jobs:
         shell: python
   run-windows-commands:
     runs-on: windows-latest
+    needs: run-shell-command
     steps:
       - name: Print PWD w/ PowerShell
         run: Get-Location
