@@ -14,6 +14,6 @@ jobs:
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
       - name: Checkout
-        uses: actions/checkout@latest
+        uses: actions/checkout@v3.0.2
       - name: List Items after Checkout
         run: ls -al
